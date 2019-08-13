@@ -1,0 +1,12 @@
+//
+//  WZbannerHeader.pch
+//  Pods
+//
+//  Created by 王钊 on 2019/8/9.
+//
+
+#ifndef WZbannerHeader_h
+#define WZbannerHeader_h
+#import "UIView+WZFrame.h"
+#import <SDWebImage/SDImageCache.h>
+#endif /* WZbannerHeader_h */
