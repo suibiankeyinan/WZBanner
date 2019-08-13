@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WZBanner'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of WZBanner.'
+  s.version          = '0.2.0'
+  s.summary          = '简洁好用的轮播图'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
