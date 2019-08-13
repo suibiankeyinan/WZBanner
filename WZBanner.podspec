@@ -21,22 +21,24 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/sunnyYellow/WZBanner'
+  s.homepage         = 'https://github.com/suibiankeyinan/WZBanner'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'sunnyYellow' => '593723600@qq.com' }
-  s.source           = { :git => 'https://github.com/sunnyYellow/WZBanner.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/suibiankeyinan/WZBanner.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'WZBanner/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'WZBanner' => ['WZBanner/Assets/*.png']
-  # }
+  s.prefix_header_file = 'WZbanner/Classes/BannerTool/WZbannerHeader.pch'
+  s.resource_bundles = {
+     'WZBanner' => ['WZbanner/Assets/*.png','WZbanner/Assets/*.jpg']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+    s.dependency 'SDWebImage', '3.7.6'
+
 end
