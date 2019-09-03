@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WZBanner'
-  s.version          = '0.1.1'
+  s.version          = '0.2.0'
   s.summary          = '简洁好用的轮播图'
 
 # This description is used to generate tags and improve search results.
