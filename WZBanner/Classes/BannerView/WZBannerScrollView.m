@@ -62,6 +62,17 @@
     [self.middleBannerCell setSourceInfor:_sources[_currentIndex]];
     [self.lastBannerCell setSourceInfor:_sources[rightIndex]];
 }
+- (void)scrollViewDidEndDecelerating:(nonnull UIScrollView *)scrollView{
+    CGPoint currentPoint = scrollView.contentOffset;
+    float current = currentPoint.x/self.frame.size.width;
+    if (current == 0) {
+        _currentIndex = (_currentIndex == 0)?_sources.count-1:_currentIndex-1;
+        [self refreashCurrent:_currentIndex];
+    }else if (current > 1.5&&current<2){
+        _currentIndex = (_currentIndex == _sources.count-1)?0:_currentIndex+1;
+        [self refreashCurrent:_currentIndex];
+    }
+}
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGPoint currentPoint = scrollView.contentOffset;
     float current = currentPoint.x/self.frame.size.width;
